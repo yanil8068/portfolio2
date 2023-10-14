@@ -123,12 +123,13 @@ text-align: center;
 }
 .about_right{
 flex-basis:50%;
-background: red;
+color: white;
+
 }
 .about_left{
     flex-basis:50%;
     margin: auto;
-    background-color: green;
+
 }
 .features_desc{
     display: flex;
