@@ -124,6 +124,7 @@ text-align: center;
 .about_right{
 flex-basis:50%;
 color: white;
+background: rgb(11, 7, 63);
 
 }
 .about_left{
@@ -150,5 +151,25 @@ color: white;
         font-weight: bold;
         text-align: initial;
         }
+        @media screen and (max-width: 770px) {
 
+
+
+            .about_main{
+                width: 90%;
+                
+                display: block;
+               
+             
+               
+            
+            } 
+            .about_left img{
+                width: 240px;
+               
+            }
+            .navbar{
+                display: none;
+            }
+        }
 
