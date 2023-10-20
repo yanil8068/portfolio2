@@ -100,9 +100,12 @@ text-align: center;
 /* about */
 #about{
     width: 100%;
-    padding: 50px 0;
+    
     background: rgb(7, 4, 46);
     height: 100vh;
+}
+#about .text{
+    padding: 20px;
 }
 #about h1{
     text-align: center;
@@ -111,7 +114,7 @@ text-align: center;
 }
 .about_main{
     width: 80%;
-    margin: auto;
+    margin: 50px auto ;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -186,12 +189,17 @@ text-align: center;
                border-radius: 5px;
                
               } 
+              #about{
+                height: 140vh;
+                
+                
+            }
         }
 
         /* myprojects  */
         #myprojects{
             width: 100%;
-            padding: 50px 0;
+            
             background: rgb(7, 4, 46);
             height: 100vh;
         }
@@ -199,5 +207,36 @@ text-align: center;
             text-align: center;
             font-size: 50px;
             color: white;
+        }
+        .project_main{
+            margin: 50px auto ;
+            width: 100%;
+            height: 600px;
+            /* background: white; */
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+           
+
+        }
+        #myprojects .text{
+            padding: 20px;
+        }
+        .one ,.two ,.three  {
+            flex-basis: 20%;
+            /* background: green; */
+            height: 400px;
+            border-radius: 10px;
+
+        }
+        .one{
+            background: lightblue;
+        }
+        .two{
+            background: yellow;
+        }
+        .three{
+            background: pink;
         }
 
