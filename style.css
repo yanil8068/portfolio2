@@ -130,7 +130,6 @@ text-align: center;
     width: 300px;
     border-radius: 10px;
 }
-
 .about_right {
     flex-basis: 55%;
     color: white;
@@ -166,38 +165,23 @@ text-align: center;
         font-weight: bold;
         text-align: initial;
         }
-
         @media screen and (max-width: 770px) {
-
-
-
             .about_main{
-                width: 90%;
-                
-                display: block;
-               
-             
-               
-            
+                width: 90%; 
+                display: block; 
             } 
             .about_left img{
                 width: 240px;
-               
             }
             .navbar{
                 display: none;
             }
              .about_right {
-                
-                
                border: 5px solid white;
-               border-radius: 5px;
-               
+               border-radius: 5px; 
               } 
               #about{
-                height: 140vh;
-                
-                
+                height: 140vh;    
             }
         }
 
@@ -222,8 +206,6 @@ text-align: center;
             gap: 30px;
             flex-wrap: wrap;
             justify-content: center;
-           
-
         }
         #myprojects .text{
             padding: 20px;
@@ -235,8 +217,6 @@ text-align: center;
             border-radius: 10px;
             text-align: center;
             padding: 20px 0;
-
-
         }
         .one img, .two img, .three img{
             width: 230px;
@@ -255,11 +235,9 @@ text-align: center;
         .one #git:hover, .two #git:hover, .three #git:hover{
             
                background: black;
-               color: white;
-              
+               color: white;    
            }
-        .one #see, .two #see, .three #see{
-          
+        .one #see, .two #see, .three #see{  
             margin: 0 10px;
             width: 40%;
             background: crimson;
@@ -268,15 +246,10 @@ text-align: center;
             padding: 5px 0;
             border-radius: 10px;
             transition: 0.4s;
-
         }
         .one #see:hover, .two #see:hover, .three #see:hover{
-          
-           
-            background: blueviolet;
-            color: white;
-         
-
+        background: blueviolet;
+        color: white;
         }
         .one{
             background: lightblue;
@@ -287,12 +260,10 @@ text-align: center;
         .three{
             background: pink;
         }
-      
 /* certificates */
 /* myprojects  */
 #certificates{
     width: 100%;
-    
     background: rgb(7, 4, 46);
     height: 100vh;
 }
@@ -310,8 +281,6 @@ text-align: center;
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
-   
-
 }
 #certificates .text{
     padding: 20px;
@@ -324,8 +293,6 @@ text-align: center;
     border-radius: 10px;
     text-align: center;
     padding: 20px 0;
-
-
 }
 .one img, .two img, .three img{
     width: 230px;
@@ -342,14 +309,11 @@ text-align: center;
     border-radius: 10px;
     transition: 0.4s;
 }
-.one #git:hover, .two #git:hover, .three #git:hover{
-    
-       background: black;
-       color: white;
-      
+.one #git:hover, .two #git:hover, .three #git:hover{ 
+     background: black;
+       color: white;   
    }
 .one #see, .two #see, .three #see{
-  
     margin: 0 10px;
     width: 40%;
     background: crimson;
@@ -359,15 +323,10 @@ text-align: center;
     border-radius: 10px;
     transition: 0.4s;
     border: 3px solid black;
-
 }
 .one #see:hover, .two #see:hover, .three #see:hover{
-  
-   
     background: blueviolet;
     color: white;
- 
-
 }
 .one{
     background: lightblue;
