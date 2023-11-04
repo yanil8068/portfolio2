@@ -277,7 +277,7 @@ text-align: center;
 #certificates .text{
     padding: 20px;
 }
-.one ,.two ,.three  {
+.certificates_main .one ,.certificates_main .two ,.certificates_main .three  {
     flex-basis: 20%;
     /* background: green; */
     height: 380px;
@@ -286,11 +286,11 @@ text-align: center;
     text-align: center;
     padding: 20px 0;
 }
-.one img, .two img, .three img{
+.certificates_main .one img, .certificates_main .two img, .certificates_main .three img{
     width: 230px;
     margin: 30px auto;
 }
-.one #git, .two #git, .three #git{
+.certificates_main .one #git,.certificates_main .two #git,.certificates_main .three #git{
  margin: 0 10px;
     width: 40%;
     background: blue;
@@ -301,11 +301,11 @@ text-align: center;
     border-radius: 10px;
     transition: 0.4s;
 }
-.one #git:hover, .two #git:hover, .three #git:hover{ 
+.certificates_main .one #git:hover,.certificates_main .two #git:hover,.certificates_main .three #git:hover{ 
      background: black;
        color: white;   
    }
-.one #see, .two #see, .three #see{
+   .certificates_main .one #see,.certificates_main .two #see,.certificates_main .three #see{
     margin: 0 10px;
     width: 40%;
     background: crimson;
@@ -316,18 +316,18 @@ text-align: center;
     transition: 0.4s;
     border: 3px solid black;
 }
-.one #see:hover, .two #see:hover, .three #see:hover{
+.certificates_main .one #see:hover,.certificates_main .two #see:hover,.certificates_main .three #see:hover{
     background: blueviolet;
     color: white;
 }
-.one{
-    background: lightblue;
+.certificates_main .one{
+    background: green;
 }
-.two{
-    background: yellow;
+.certificates_main .two{
+    background: orangered;
 }
-.three{
-    background: pink;
+.certificates_main .three{
+    background: violet;
 }
 
 
