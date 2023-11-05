@@ -321,13 +321,13 @@ text-align: center;
     color: white;
 }
 .certificates_main .one{
-    background: green;
+    background: rgb(60, 187, 60);
 }
 .certificates_main .two{
-    background: orangered;
+    background: rgb(244, 99, 47);
 }
 .certificates_main .three{
-    background: violet;
+    background: rgb(227, 137, 227);
 }
 
 
