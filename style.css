@@ -143,10 +143,10 @@ text-align: center;
     height: 100%;
     background: rgb(15, 10, 88);
     border-radius: 20px;
-
-    
-    
-
+    transition: 0.6s ease-in-out;
+}
+.about_left:hover{
+ transform: rotate(17deg);
 }
 .features_desc{
     display: flex;
@@ -200,7 +200,7 @@ text-align: center;
     .features_text p{
         padding: 0 20px;
         font-weight: bold;
-        text-align: initial;
+        text-align: justify;
         }
         @media screen and (max-width: 770px) {
             .about_main{
@@ -236,11 +236,7 @@ text-align: center;
         }
        
         }
-        @media screen and (min-width: 300px) and (max-width: 699px) {
-            #about {
-                height: 100vh;
-            }
-          }
+      
 
         /* myprojects  */
         #myprojects{
@@ -331,11 +327,7 @@ text-align: center;
                 flex-basis: 80%;
             }
         }
-        @media screen and (min-width: 300px) and (max-width: 699px) {
-            #myprojects {
-                height: 170vh;
-            }
-          }
+     
         
 /* myprojects  */
 /* certificates */
@@ -364,13 +356,14 @@ text-align: center;
     padding: 20px;
 }
 .certificates_main .one ,.certificates_main .two ,.certificates_main .three  {
-    flex-basis: 20%;
+    flex-basis: 25%;
     /* background: green; */
-    height: 250px;
+    height: 270px;
     
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border-radius: 10px 100px / 120px;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     
 }
 .certificates_main .one img, .certificates_main .two img, .certificates_main .three img{
@@ -403,11 +396,14 @@ text-align: center;
     border-radius: 10px;
     transition: 0.4s;
     border: 3px solid black;
+
 }
 .certificates_main .one #see:hover,.certificates_main .two #see:hover,.certificates_main .three #see:hover{
     background: black;
     color: white;
+   
 }
+
 .certificates_main .one{
     background: rgb(60, 187, 60);
 }
@@ -429,11 +425,7 @@ text-align: center;
         flex-basis: 80%;
     }
 }
-@media screen and (min-width: 300px) and (max-width: 699px) {
-    #certificates {
-        height: 120vh;
-    }
-  }
+
 
 
 /* contact */
@@ -551,11 +543,6 @@ margin-bottom: 10px;
     flex-basis: 80%;
 }
 }
-@media screen and (min-width: 300px) and (max-width: 699px) {
-    #contact {
-        height: 120vh;
-    }
-  }
 
         
     
