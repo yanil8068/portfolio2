@@ -234,7 +234,13 @@ text-align: center;
         .features_desc {
             padding: 15px;
         }
+       
         }
+        @media screen and (min-width: 300px) and (max-width: 699px) {
+            #about {
+                height: 100vh;
+            }
+          }
 
         /* myprojects  */
         #myprojects{
@@ -325,6 +331,12 @@ text-align: center;
                 flex-basis: 80%;
             }
         }
+        @media screen and (min-width: 300px) and (max-width: 699px) {
+            #myprojects {
+                height: 170vh;
+            }
+          }
+        
 /* myprojects  */
 /* certificates */
 
@@ -417,6 +429,11 @@ text-align: center;
         flex-basis: 80%;
     }
 }
+@media screen and (min-width: 300px) and (max-width: 699px) {
+    #certificates {
+        height: 120vh;
+    }
+  }
 
 
 /* contact */
@@ -534,6 +551,11 @@ margin-bottom: 10px;
     flex-basis: 80%;
 }
 }
+@media screen and (min-width: 300px) and (max-width: 699px) {
+    #contact {
+        height: 120vh;
+    }
+  }
 
         
     
