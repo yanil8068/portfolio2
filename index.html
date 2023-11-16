@@ -10,23 +10,24 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
   </head>
-  <body>
+  <body>  
     <section id="home">
       <div class="nav">
-        <div class="logo"><h3>ANIL</h3></div>
+        <div class="logo"><h3>Anil</h3></div>
         <div class="navbar">
           <ul>
-            <li><a href="#feature_box">Home</a></li>
+            <li><a href="#home">Home</a></li>
 
             <li><a href="#about">about</a></li>
 
-            <li><a href="#myprojects">myprojecs</a></li>
+            <li><a href="#myprojects">myprojects</a></li>
 
             <li><a href="#certificates">certificates</a></li>
 
             <li><a href="#contact">contact</a></li>
           </ul>
         </div>
+        
       </div>
       <hr />
 
@@ -48,7 +49,23 @@
           <div class="button"><button>Hire me</button></div>
         </div>
       </div>
+      <span id="homedownarrow"><a href="#about"><i class="fa-solid fa-angles-down"></i></a></span>
     </section>
+    <div id="navigation">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#myprojects">myprojects</a></li>
+          <li><a href="#certificates">certificates</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menubtn">
+      <img src="images/menu.png" id="menu" alt="menu" />
+    </div>
+   
     <hr />
     <section id="about">
       <div class="text"><h1>About</h1></div>
@@ -87,12 +104,13 @@
       
             </div>
             <div class="contactmehere">
-              <i class="fa-solid fa-phone"></i><span> Contact Me</span>
+              <a href="#contact"><i class="fa-solid fa-phone"></i><span> Contact Me</span></a>
             </div>
           </div>
           
         </div>
       </div>
+      <span id="aboutdownarrow"><a href="#myprojects"><i class="fa-solid fa-angles-down"></i></a></span>
     </section>
     <hr />
     <section id="myprojects">
@@ -122,6 +140,7 @@
           <button id="git">Github</button>
         </div>
       </div>
+      <span id="myprojectsdownarrow"><a href="#certificates"><i class="fa-solid fa-angles-down"></i></a></span>
     </section>
     <hr>
 
@@ -153,6 +172,7 @@
           
         </div>
       </div>
+      <span id="certificatesdownarrow"><a href="#contact"><i class="fa-solid fa-angles-down"></i></a></span>
     </section>
     
     <hr>
@@ -182,6 +202,7 @@
         <p>Copyright © yanil8068@gmail.com . All Rights Reserved.</p>
 
       </div>
+      <span id="contacthomearrow"><a href="#home"><i class="fa-solid fa-house"></i></a></span>
 
     </section>
     <script src="script.js"></script>

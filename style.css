@@ -2,24 +2,37 @@
     padding: 0;
     margin: 0 
 }
+html {
+    scroll-behavior: smooth;
+    scroll-behavior: smooth;
+  }
+  body{
+    background-color: rgb(5, 5, 39);
+    /* color: white; */
+  }
+  
  #home{
    width: 100%;
    height: 100vh;
-   background: rgb(7, 4, 46);
+   /* background: #22092C; */
    color: white;
    
 } 
+
 .nav{  
    width: 100%;
 display: flex;
 justify-content: space-between;
 align-items: center;
 height: 85px;
+background-color: rgb(3, 3, 59);
+
 }
 .nav .logo{
     width: 30%;
     font-size: 40px;
-    text-align: center;    
+    text-align: center;
+    font-family: math;    
 }
 .nav .navbar {
     width: 50%;
@@ -36,24 +49,23 @@ height: 85px;
     color: white;
     font-size: 20px;   
 }
+
 .nav .navbar li {
     list-style: none;
-    padding: 8px;
-     
-     
+    padding: 8px;  
 }
-/* .nav .navbar li:hover {
-    border-radius: 5px;
-    border: 2px solid white;
-    
-} */
+.nav .navbar li:hover {
+    border-bottom: 2px solid white;
+  
+}
 
 .feature_box{
     display: flex;
     justify-content: center;
     padding: 45px 0;
     width: 100%;
-    height: 100%;
+    
+    height: 60%;
   
 }
 .features{
@@ -82,7 +94,13 @@ text-align: center;
 .features .icons i{
     font-size: 25px;
     padding: 10px 15px;
+    transition: 0.5s;
 }
+.icons i:hover{
+    transform: translateY(-10px); 
+}
+
+
 .features .button{
     padding: 10px 0px;
 }
@@ -94,15 +112,79 @@ text-align: center;
     font-weight: bold;
     
 }
+#homedownarrow{
+    position: absolute;
+    right: 50px;
+}
+#homedownarrow a{
+color: white;
+}
+/* media nav */
+/* navigation bar */
+#navigation{
+    /* very important positioning */
+    position: fixed;
+    top: 0;
+    right: -200px;
+    background: rgb(15, 10, 88);
+    height: 100vh;
+    width: 150px;
+    z-index: 2;
+    transition: 0.5s;
+    display: none;
+}
 
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+    
+    
+}
 
+nav ul li a{
+    text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+#menubtn{
+    /* veryimportant positioning */
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+    background: rgb(7, 37, 58);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    display: none;
+}
+#menubtn img{
+    width: 20px;
+    margin: 15px;
+}
+@media screen and (max-width: 770px) {
+    #menubtn{
+        display: block;
+    }  
+    #navigation{
+    
+        display: block;
+    }
+    #homedownarrow{
+       display: none;
+    }
+}
 
 /* about */
 #about{
     width: 100%;
     
-    background: rgb(7, 4, 46);
+    /* background: #22092C; */
     height: 100vh;
+    position: relative;
 }
 #about .text{
     padding: 20px;
@@ -185,6 +267,15 @@ text-align: center;
         border: 2px solid white; 
         border-radius: 10px;
         background: rgb(177, 29, 53);
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .contactmehere a{
+     color: white;
+     text-decoration: none;
+    }
+    .contactmehere:hover{
+        background: rgb(156, 6, 31);
     }
    
 
@@ -202,6 +293,15 @@ text-align: center;
         font-weight: bold;
         text-align: justify;
         }
+#aboutdownarrow{
+            position: absolute;
+            right: 50px;
+            bottom: 80px;
+            
+}
+#aboutdownarrow a{
+color: white;  
+}
         @media screen and (max-width: 770px) {
             .about_main{
                 width: 90%; 
@@ -234,6 +334,9 @@ text-align: center;
         .features_desc {
             padding: 15px;
         }
+        #aboutdownarrow{       
+            display: none;    
+}
        
         }
       
@@ -241,8 +344,8 @@ text-align: center;
         /* myprojects  */
         #myprojects{
             width: 100%;
-            
-            background: rgb(7, 4, 46);
+            position: relative;
+            /* background: #22092C; */
             height: 100vh;
         }
         #myprojects h1{
@@ -313,6 +416,16 @@ text-align: center;
         .three{
             background: pink;
         }
+        #myprojectsdownarrow{
+            position: absolute;
+            right: 50px;
+            bottom: 80px;
+            
+}
+#myprojectsdownarrow a{
+ color: white;
+    
+}
         @media screen and (max-width: 770px) {
             #myprojects {
                 height: 220vh;
@@ -326,6 +439,10 @@ text-align: center;
             .one, .two, .three {
                 flex-basis: 80%;
             }
+            #myprojectsdownarrow{
+              display: none;
+                
+    }
         }
      
         
@@ -334,8 +451,10 @@ text-align: center;
 
 #certificates{
     width: 100%;
-    background: rgb(7, 4, 46);
+    /* background: #22092C; */
     height: 100vh;
+    position: relative;
+   
 }
 #certificates h1{
     text-align: center;
@@ -413,9 +532,19 @@ text-align: center;
 .certificates_main .three{
     background: rgb(227, 137, 226);
 }
+#certificatesdownarrow{
+    position: absolute;
+    right: 50px;
+    bottom: 80px;
+    
+}
+#certificatesdownarrow a{
+    color: white;
+    
+}
 @media screen and (max-width: 770px) {
     #certificates {
-        height: 150vh;
+        height: 170vh;
     }
     .certificates_main {
         margin: 10px auto;
@@ -423,6 +552,10 @@ text-align: center;
     }
     .certificates_main .one, .certificates_main .two, .certificates_main .three {
         flex-basis: 80%;
+    }
+    #certificatesdownarrow{
+      display: none;
+        
     }
 }
 
@@ -432,7 +565,7 @@ text-align: center;
 
 #contact{
     width: 100%;
-    background: rgb(7, 4, 46);
+    /* background: #22092C; */
     height: 100vh; 
     position: relative; 
 }
@@ -525,6 +658,15 @@ margin-bottom: 10px;
     background: rgb(229, 21, 55);
     color: white;
   }
+  #contacthomearrow{
+    position: absolute;
+    right: 50px;
+    bottom: 80px;
+    
+}
+#contacthomearrow a{
+   color: white;  
+}
 
   @media screen and (max-width: 770px) {
     #contact {
@@ -541,6 +683,10 @@ margin-bottom: 10px;
 .contact_main .rightpart {
      margin-top: 10px; 
     flex-basis: 80%;
+}
+#contacthomearrow{
+  display: none;
+    
 }
 }
 
