@@ -47,7 +47,8 @@ background-color: rgb(3, 3, 59);
 .nav .navbar li a{
     text-decoration: none;
     color: white;
-    font-size: 20px;   
+    font-size: 20px;  
+    font-family: 'Trebuchet MS', sans-serif; 
 }
 
 .nav .navbar li {
@@ -74,6 +75,7 @@ text-align: center;
 
 .features .imgg img{
    width: 230px;
+   /* box-shadow: 5px 5px 10px yellow; */
 }
 .features h1{
     font-family: Arial, Helvetica, sans-serif;
@@ -138,13 +140,14 @@ nav ul li{
     list-style: none;
     margin: 50px 20px;
     
-    
 }
 
 nav ul li a{
     text-decoration: none;
   color: white;
   font-weight: bold;
+  font-family: 'Trebuchet MS', sans-serif;
+ 
 }
 
 #menubtn{
@@ -366,13 +369,19 @@ color: white;
         #myprojects .text{
             padding: 20px;
         }
-        .one ,.two ,.three  {
+        .project_main .one ,.project_main .two ,.project_main .three  {
             flex-basis: 20%;
             /* background: green; */
             height: 380px;
             border-radius: 10px;
             text-align: center;
             padding: 20px 0;
+            transition: 0.4s;
+           
+        }
+        .project_main .one:hover ,.project_main .two:hover ,.project_main .three:hover  {
+         box-shadow: 10px 10px 20px rgb(108, 12, 177);
+           
         }
         .one img, .two img, .three img{
             width: 230px;
