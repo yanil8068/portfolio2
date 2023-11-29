@@ -26,6 +26,9 @@ justify-content: space-between;
 align-items: center;
 height: 85px;
 background-color: rgb(3, 3, 59);
+/* very important */
+/* position: fixed; */
+/* position: sticky */
 
 }
 .nav .logo{
@@ -34,6 +37,7 @@ background-color: rgb(3, 3, 59);
     text-align: center;
     font-family: math;    
 }
+
 .nav .navbar {
     width: 50%;
     }
@@ -82,7 +86,10 @@ text-align: center;
     font-size: 40px;
     font-weight: bold;
     padding: 3px 0px;
+    
+    
 }
+
 
 .features p{
    
@@ -484,20 +491,27 @@ color: white;
     padding: 20px;
 }
 .certificates_main .one ,.certificates_main .two ,.certificates_main .three  {
-    flex-basis: 25%;
+    flex-basis: 20%;
     /* background: green; */
-    height: 270px;
+    height: 300px;
     
-    /* border-radius: 10px; */
-    border-radius: 10px 100px / 120px;
+    border-radius: 10px;
+    /* border-radius: 10px 100px / 120px; */
     text-align: center;
-    padding: 20px 0;
+    padding:  0;
+    
     
 }
 .certificates_main .one img, .certificates_main .two img, .certificates_main .three img{
     width: 150px;
     height: 150px;
-    margin: 0px auto;
+    /* margin: 0px auto; */
+    margin: 10px auto;
+}
+.certificates_desc{
+    background-color: white;
+
+   
 }
 .certificates_main .one #git,.certificates_main .two #git,.certificates_main .three #git{
  margin: 0 10px;
@@ -612,6 +626,7 @@ color: white;
     border-radius: 10px;
     text-align: center;
    
+   
 }
 .contact_main .leftpart{
     margin-top: 50px;
@@ -623,12 +638,13 @@ color: white;
     border-radius: 10px;
     text-align: center;
     padding: 0;
+   
 }
 .email, .phoneno, .instagram{
     
     flex-basis: 30%;
     height: 30%;
-    /* background: green; */
+    /* background: rgb(6, 6, 211); */
     
     border: 2px solid white;
     border-radius: 10px;
@@ -640,9 +656,11 @@ color: white;
    font-size: large;
    font-weight: bold;
 
+
 }
 .email{
 margin-bottom: 10px;
+
 }
 .phoneno{
     margin: 10px 0;
