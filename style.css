@@ -78,17 +78,46 @@ text-align: center;
 }
 
 .features .imgg img{
-   width: 280px;
+   /* width: 280px; */
    
    /* box-shadow: 5px 5px 10px yellow; */
 }
+
+
+@keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.9);
+      transform: translatey(0px);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0,0,0,0.4);
+      transform: translatey(-25px);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.9);
+      transform: translatey(0px);
+    }
+  }
+
+  
+  .features .imgg{
+    width: 280px;
+    height: 280px;
+    box-sizing: border-box;
+     border: 5px white solid; 
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+    animation: float 2.5s ease-in-out infinite;
+    img { width: 100%; height: auto; }
+}
+
 .features h1{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
     font-weight: bold;
-    padding: 3px 0px;
-    
-    
+    padding: 3px 0px;  
 }
 
 
@@ -128,18 +157,19 @@ text-align: center;
     border: 2px solid white;
     
 }
-.features .button button:hover{
-    
-  
+.features .button button:hover{ 
     background: rgb(233, 70, 0);
-   
-  
-    border: 2px solid white;
-    
+    border: 2px solid white;  
 }
+
+
+
 #homedownarrow{
     position: absolute;
     right: 50px;
+    transform: translatey(0px);
+    animation: float 2.5s ease-in-out infinite;
+    
 }
 #homedownarrow a{
 color: white;
@@ -208,7 +238,7 @@ nav ul li a{
         
     }
     .features .imgg img{
-        width: 220px;
+        /* width: 220px; */
         /* box-shadow: 5px 5px 10px yellow; */
      }
      .features h1{  
@@ -258,6 +288,22 @@ nav ul li a{
     border-radius: 10px;
     height: 100%;
   }
+
+  
+@keyframes tiltit{
+    0% {
+     
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(17deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+  }
+
+
 .about_left{
     flex-basis: 20%;
     margin: auto;
@@ -265,10 +311,12 @@ nav ul li a{
     background: rgb(15, 10, 88);
     border-radius: 20px;
     transition: 0.6s ease-in-out;
+    transform: rotate(0deg);
+    animation: tiltit 2.5s ease-in-out infinite;
 }
-.about_left:hover{
+/* .about_left:hover{
  transform: rotate(17deg);
-}
+} */
 .features_desc{
     display: flex;
     align-items: center;
@@ -336,6 +384,8 @@ nav ul li a{
             position: absolute;
             right: 50px;
             bottom: 80px;
+            transform: translatey(0px);
+            animation: float 2.5s ease-in-out infinite;
             
 }
 #aboutdownarrow a{
@@ -416,7 +466,8 @@ color: white;
            
         }
         .project_main .one:hover ,.project_main .two:hover ,.project_main .three:hover,.project_main .four:hover  {
-         box-shadow: 10px 10px 20px rgb(108, 12, 177);
+          box-shadow: 0px 0px 20px rgb(108, 12, 177); 
+         
            
         }
         .one img, .two img, .three img, .four img{
@@ -468,6 +519,8 @@ color: white;
             position: absolute;
             right: 50px;
             bottom: 80px;
+            transform: translatey(0px);
+            animation: float 2.5s ease-in-out infinite;
             
 }
 #myprojectsdownarrow a{
@@ -594,6 +647,8 @@ color: white;
     position: absolute;
     right: 50px;
     bottom: 80px;
+    transform: translatey(0px);
+    animation: float 2.5s ease-in-out infinite;
     
 }
 #certificatesdownarrow a{
@@ -724,6 +779,8 @@ margin-bottom: 10px;
     position: absolute;
     right: 50px;
     bottom: 80px;
+    transform: translatey(0px);
+    animation: float 2.5s ease-in-out infinite;
     
 }
 #contacthomearrow a{
