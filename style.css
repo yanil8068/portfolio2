@@ -455,7 +455,7 @@ color: white;
         #myprojects .text{
             padding: 20px;
         }
-        .project_main .one ,.project_main .two ,.project_main .three,.project_main .four{
+        .project_main .one ,.project_main .two ,.project_main .three,.project_main .four,.project_main .five,.project_main .six {
             flex-basis: 27%;
             /* background: green; */
             height: 380px;
@@ -465,17 +465,17 @@ color: white;
             transition: 0.4s;
            
         }
-        .project_main .one:hover ,.project_main .two:hover ,.project_main .three:hover,.project_main .four:hover  {
+        .project_main .one:hover ,.project_main .two:hover ,.project_main .three:hover,.project_main .four:hover,.project_main .five:hover,.project_main .six:hover  {
           /* box-shadow: 0px 0px 20px rgb(108, 12, 177);  */
-          scale: 1.05;
+          scale: 1.06;
          
            
         }
-        .one img, .two img, .three img, .four img{
+        .one img, .two img, .three img, .four img, .five img, .six img{
             width: 230px;
             margin: 30px auto;
         }
-        .one #git, .two #git, .three #git, .four #git{
+        .one #git, .two #git, .three #git, .four #git, .five #git, .six #git{
          margin: 0 10px;
             width: 40%;
             background: blue;
@@ -485,12 +485,12 @@ color: white;
             border-radius: 10px;
             transition: 0.4s;
         }
-        .one #git:hover, .two #git:hover, .three #git:hover, .four #git:hover{
+        .one #git:hover, .two #git:hover, .three #git:hover, .four #git:hover, .five #git:hover, .six #git:hover{
             
                background: black;
                color: white;    
            }
-        .one #see, .two #see, .three #see, .four #see{  
+        .one #see, .two #see, .three #see, .four #see, .five #see, .six #see{  
             margin: 0 10px;
             width: 40%;
             background: crimson;
@@ -500,7 +500,7 @@ color: white;
             border-radius: 10px;
             transition: 0.4s;
         }
-        .one #see:hover, .two #see:hover, .three #see:hover, .four #see:hover{
+        .one #see:hover, .two #see:hover, .three #see:hover, .four #see:hover, .five #see:hover, .six #see:hover{
         background: blueviolet;
         color: white;
         }
@@ -516,6 +516,12 @@ color: white;
         .four{
             background: rgb(239, 76, 76);
         }
+        .five{
+            background: #fff;
+        }
+        .six{
+            background: rgb(255, 115, 243);
+        }
         #myprojectsdownarrow{
             position: absolute;
             right: 50px;
@@ -530,7 +536,7 @@ color: white;
 }
         @media screen and (max-width: 770px) {
             #myprojects {
-                height: 300vh;
+                height: 430vh;
             }
             .project_main{
                 margin: 10px auto ;
@@ -538,13 +544,17 @@ color: white;
                 /* background: white; */ 
                 gap: 10px;
             } 
-            .one, .two, .three, .four {
+            .one, .two, .three, .four, .five, .six {
                 flex-basis: 90%;
             }
             #myprojectsdownarrow{
               display: none;
                 
     }
+    .project_main .one:hover ,.project_main .two:hover ,.project_main .three:hover,.project_main .four:hover,.project_main .five:hover,.project_main .six:hover  {
+        /* box-shadow: 0px 0px 20px rgb(108, 12, 177);  */
+        scale: 1; 
+      }
         }
      
         
