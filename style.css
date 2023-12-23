@@ -24,11 +24,12 @@ html {
 display: flex;
 justify-content: space-between;
 align-items: center;
-height: 85px;
+height: 95px;
 background-color: rgb(3, 3, 59);
 /* very important */
 /* position: fixed; */
-/* position: sticky */
+/* position: sticky; */
+/* top: 0; */
 
 }
 .nav .logo{
@@ -36,7 +37,10 @@ background-color: rgb(3, 3, 59);
     font-size: 40px;
     text-align: center;
     font-family: math;    
+    padding-left: 20px;
+    padding-top: 10px;
 }
+
 
 .nav .navbar {
     width: 50%;
@@ -417,18 +421,66 @@ color: white;
            .educationandcompleted {
             margin: 10px 0px;
         }
-        #about {
-            height: 115vh;
-        }
+      
         .features_desc {
             padding: 15px;
         }
         #aboutdownarrow{       
             display: none;    
 }
+.about_left{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 50%; 
+   width: 70%;
+    
+}
+.about_left img{
+ width: 200px;
+}
        
         }
       
+
+        @media screen and (min-width: 900px) and (max-width: 1200px) {
+
+            #about{
+              
+            }
+            .about_main{
+    
+                width: 90%;
+                height: 85vh;
+                margin: 0px auto ;
+               
+            }
+            .about_left{
+               width: 50%;
+               height: 60%;
+                
+            }
+            .about_left img{
+                width: 320px;
+                 
+             }
+            .about_right {
+                height: 100%;  
+              }
+              .features_desc{
+                height: 100%;
+              }
+
+
+
+
+        }
+       
+        
+        
+
+
+
+
 
         /* myprojects  */
         #myprojects{
@@ -544,8 +596,11 @@ color: white;
                 /* background: white; */ 
                 gap: 10px;
             } 
-            .one, .two, .three, .four, .five, .six {
+            .project_main .one ,.project_main .two ,.project_main .three,.project_main .four,.project_main .five,.project_main .six {
                 flex-basis: 90%;
+                /* background: green; */
+              
+               
             }
             #myprojectsdownarrow{
               display: none;
