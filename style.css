@@ -601,6 +601,7 @@ nav ul li a {
 .fourBlankSmallScreen {
   display: none;
 }
+
 @media screen and (max-width: 770px) {
   #myprojects {
     height: 370vh;
@@ -644,6 +645,7 @@ nav ul li a {
   .project_main .fourBlank {
     display: none;
   }
+
   .twoBlankSmallScreen {
     display: block;
     flex-basis: 90%;
