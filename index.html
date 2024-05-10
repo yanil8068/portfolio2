@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -12,7 +13,7 @@
     
   </head>
   <body>  
-    <section id="home">
+    <section id="home" >
       <div class="nav">
         <div class="logo"><h3>My Portfolio</h3></div>
         <div class="navbar">
@@ -32,7 +33,7 @@
       </div>
       <hr />
 
-      <div class="feature_box">
+      <div class="feature_box" >
         <div class="features">
           <div class="imgg">
             <a href="#">
@@ -74,7 +75,7 @@
     </div>
    
     <hr />
-    <section id="about">
+    <section id="about" data-aos="fade-up">
       <div class="text"><h1>ABOUT</h1></div>
       <hr />
       <div class="about_main">
@@ -121,7 +122,7 @@
       <span id="aboutdownarrow"><a href="#myprojects"><i class="fa-solid fa-angles-down"></i></a></span>
     </section>
     <hr />
-    <section id="myprojects">
+    <section id="myprojects" data-aos="fade-up">
       <div class="text"><h1>PROJECTS</h1></div>
       <hr />
       <div class="project_main">
@@ -212,7 +213,7 @@
     <hr>
 
 
-    <section id="certificates">
+    <section id="certificates" data-aos="fade-up">
       <div class="text"><h1>TECH SKILLS</h1></div>
       <hr />
       <div class="certificates_main">
@@ -273,14 +274,12 @@
            <div class="specifit_info_techskills"><i class="fa-brands fa-git-alt" style="color: orangered;"></i><h5>Git</h5></div>
           </div>
         </div>
-        
-       
       </div>
       <span id="certificatesdownarrow"><a href="#contact"><i class="fa-solid fa-angles-down"></i></a></span>
     </section>
     
     <hr>
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
       <div class="text"><h1>CONTACT ME</h1></div>
       <hr />
       <div class="contact_main">
@@ -321,6 +320,13 @@
       <span id="contacthomearrow"><a href="#home"><i class="fa-solid fa-house"></i></a></span>
 
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1000, 
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
