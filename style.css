@@ -30,6 +30,12 @@ body {
   /* position: sticky; */
   /* top: 0; */
 }
+
+.logo h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-size: 50px; */
+  font-weight: bold;
+}
 .nav .logo {
   width: 30%;
   font-size: 40px;
@@ -76,12 +82,6 @@ body {
   text-align: center;
 }
 
-.features .imgg img {
-  /* width: 280px; */
-
-  /* box-shadow: 5px 5px 10px yellow; */
-}
-
 @keyframes float {
   0% {
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.9);
@@ -107,6 +107,7 @@ body {
   box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
   transform: translatey(0px);
   animation: float 2.5s ease-in-out infinite;
+  margin: auto;
   img {
     width: 100%;
     height: auto;
@@ -123,6 +124,7 @@ body {
 .features p {
   font-size: 25px;
   padding: 3px 0px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .features p span {
   font-size: 28px;
@@ -221,7 +223,7 @@ nav ul li a {
     display: none;
   }
   .nav .logo {
-    width: 20%;
+    width: 70%;
     font-size: 30px;
   }
   .features .imgg img {
@@ -443,7 +445,7 @@ nav ul li a {
   position: relative;
   /* background: #22092C; */
   /* height: 157vh; */
-  height: 190vh;
+  height: 300vh;
 }
 #myprojects h1 {
   text-align: center;
@@ -477,6 +479,39 @@ nav ul li a {
   text-align: center;
   padding: 20px 0;
   transition: 0.4s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-size: 50px; */
+  font-weight: bold;
+
+  height: 390px;
+}
+
+.project_main .one h2,
+.project_main .two h2,
+.project_main .three h2,
+.project_main .four h2,
+.project_main .five h2,
+.project_main .six h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-size: 50px; */
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.project_main .one p,
+.project_main .two p,
+.project_main .three p,
+.project_main .four p,
+.project_main .five p,
+.project_main .six p {
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-size: 50px; */
+  font-weight: bold;
 }
 
 .project_main .two img {
@@ -499,6 +534,11 @@ nav ul li a {
   align-items: center;
   text-align: justify;
   border-bottom: 2px solid white;
+  font-size: 20px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-size: 50px; */
+  font-weight: bold;
 }
 
 .project_main .one:hover,
@@ -525,7 +565,7 @@ nav ul li a {
 .four #git,
 .five #git,
 .six #git {
-  margin: 0 10px;
+  margin: 10px 10px;
   width: 40%;
   background: blue;
   color: white;
@@ -604,7 +644,7 @@ nav ul li a {
 
 @media screen and (max-width: 770px) {
   #myprojects {
-    height: 370vh;
+    height: 430vh;
   }
   .project_main {
     margin: 10px auto;
@@ -620,10 +660,21 @@ nav ul li a {
   .project_main .six {
     flex-basis: 90%;
     /* background: green; */
+    height: 280px;
   }
   #myprojectsdownarrow {
     display: none;
   }
+
+  .project_main .oneBlank,
+  .project_main .twoBlank,
+  .project_main .threeBlank,
+  .project_main .fourBlank,
+  .project_main .fiveBlank {
+    font-size: 14.4px;
+    height: 280px;
+  }
+
   .project_main .one:hover,
   .project_main .two:hover,
   .project_main .three:hover,
@@ -829,15 +880,17 @@ nav ul li a {
 }
 
 /* contact */
-/* 
 #contact {
   width: 100%;
+  /* background: #22092C; */
+  height: 105vh;
   position: relative;
 }
 #contact .text {
   padding: 20px;
   font-family: "circular";
 }
+
 #contact h1 {
   text-align: center;
   font-size: 50px;
@@ -848,158 +901,7 @@ nav ul li a {
   color: white;
   position: absolute;
   bottom: 20px;
-}
-.contact_main {
-  margin: 0px auto;
-  width: 100%;
-  gap: 30px;
-}
-
-.contact_main .leftpart {
-  margin-top: 50px;
-  flex-basis: 20%;
-  color: white;
-
-  height: 380px;
-
-  border-radius: 10px;
-  text-align: center;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-.email,
-.linkedin,
-.github,
-.instagram {
-  flex-basis: 20%;
-  height: 30%;
-  border: 2px solid white;
-  border-radius: 10px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-size: large;
-  font-weight: bold;
-}
-
-.email {
-  border: 2px solid red;
-  color: red;
-}
-.email:hover {
-  background-color: red;
-  color: white;
-}
-
-.linkedin {
-  border: 2px solid rgb(0, 110, 255);
-  color: rgb(0, 110, 255);
-}
-.linkedin:hover {
-  background-color: rgb(0, 110, 255);
-  color: white;
-}
-
-.github {
-  border: 2px solid gray;
-  color: gray;
-}
-.github:hover {
-  background-color: gray;
-  color: white;
-}
-.instagram {
-  border: 2px solid rgb(229, 10, 167);
-  color: rgb(229, 10, 167);
-}
-.instagram:hover {
-  background-color: rgb(229, 10, 167);
-  color: white;
-}
-
-.contact_main p {
-  width: 100%;
-  text-align: center;
-}
-
-input[type="text"],
-input[type="number"],
-textarea {
-  padding: 10px 20px;
-  margin: 17px 0;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background: none;
-  color: white;
-}
-input[type="submit"] {
-  padding: 10px 20px;
-  margin: 5px 0;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  background: rgb(229, 21, 55);
-  color: white;
-}
-#contacthomearrow {
-  position: absolute;
-  right: 50px;
-  bottom: 80px;
-  transform: translatey(0px);
-  animation: float 2.5s ease-in-out infinite;
-}
-#contacthomearrow a {
-  color: white;
-}
-
-@media screen and (max-width: 770px) {
-  #contact {
-    height: 90vh;
-  }
-  .contact_main {
-    gap: 0px;
-  }
-
-  .contact_main .leftpart {
-    margin-top: 10px;
-    flex-basis: 80%;
-    flex-direction: column;
-  }
-
-  #contacthomearrow {
-    display: none;
-  }
-
-  .email,
-  .linkedin,
-  .github,
-  .instagram {
-    flex-basis: 20%;
-  }
-} */
-
-#contact {
-  width: 100%;
-  /* background: #22092C; */
-  height: 100vh;
-  position: relative;
-}
-#contact .text {
-  padding: 20px;
-}
-#contact h1 {
-  text-align: center;
-  font-size: 50px;
-  color: white;
-}
-#contact p {
-  text-align: center;
-  color: white;
-  position: absolute;
-  bottom: 20px;
+  font-family: "circular";
 }
 .contact_main {
   margin: 0px auto;
@@ -1015,10 +917,15 @@ input[type="submit"] {
   margin-top: 50px;
   flex-basis: 30%;
   color: white;
-  height: 380px;
+  height: 495px;
   border: 2px solid white;
   border-radius: 10px;
   text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "circular";
 }
 .contact_main .leftpart {
   margin-top: 50px;
@@ -1030,9 +937,11 @@ input[type="submit"] {
   border-radius: 10px;
   text-align: center;
   padding: 0;
+  font-family: "circular";
 }
 .email,
-.phoneno,
+.linkedin,
+.github,
 .instagram {
   flex-basis: 30%;
   height: 30%;
@@ -1048,10 +957,45 @@ input[type="submit"] {
   font-size: large;
   font-weight: bold;
 }
+
+.email {
+  border-color: red;
+  color: red;
+}
+.linkedin {
+  border-color: #0a66c2;
+  color: #0a66c2;
+}
+.github {
+  border-color: green;
+  color: green;
+}
+.instagram {
+  border-color: #fe4299;
+  color: #fe4299;
+}
+
+.email:hover {
+  background-color: red;
+  color: white;
+}
+.linkedin:hover {
+  background-color: #0a66c2;
+  color: white;
+}
+.github:hover {
+  background-color: green;
+  color: white;
+}
+.instagram:hover {
+  background-color: #fe4299;
+  color: white;
+}
+
 .email {
   margin-bottom: 10px;
 }
-.phoneno {
+.linkedin {
   margin: 10px 0;
 }
 .instagram {
@@ -1089,10 +1033,15 @@ input[type="submit"] {
 
 @media screen and (max-width: 770px) {
   #contact {
-    height: 150vh;
+    height: 160vh;
   }
   .contact_main {
     gap: 0px;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
   }
 
   .contact_main .leftpart {
@@ -1103,6 +1052,35 @@ input[type="submit"] {
     margin-top: 10px;
     flex-basis: 80%;
   }
+
+  .email,
+  .linkedin,
+  .github,
+  .instagram {
+    padding: 10px;
+  }
+
+  .email:hover {
+    background-color: transparent;
+    color: red;
+  }
+  .linkedin:hover {
+    background-color: transparent;
+    color: #0a66c2;
+  }
+  .github:hover {
+    background-color: transparent;
+    color: green;
+  }
+  .instagram:hover {
+    background-color: transparent;
+    color: #fe4299;
+  }
+
+  form {
+    padding: 10px;
+  }
+
   #contacthomearrow {
     display: none;
   }
