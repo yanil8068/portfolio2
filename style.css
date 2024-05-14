@@ -755,7 +755,7 @@ nav ul li a {
   flex-basis: 13%;
   /* edited to 20 from 25 */
   /* background: green; */
-  height: 250px;
+  height: 270px;
 
   border-radius: 5px;
 
@@ -862,7 +862,7 @@ nav ul li a {
 }
 @media screen and (max-width: 770px) {
   #certificates {
-    height: 290vh;
+    height: 320vh;
   }
   .certificates_main {
     margin: 10px auto;
@@ -1033,7 +1033,7 @@ input[type="submit"] {
 
 @media screen and (max-width: 770px) {
   #contact {
-    height: 160vh;
+    height: 170vh;
   }
   .contact_main {
     gap: 0px;
