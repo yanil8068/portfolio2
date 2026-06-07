@@ -108,10 +108,10 @@ body {
   transform: translatey(0px);
   animation: float 2.5s ease-in-out infinite;
   margin: auto;
-  img {
-    width: 100%;
-    height: auto;
-  }
+}
+.features .imgg img {
+  width: 100%;
+  height: auto;
 }
 
 .features h1 {
