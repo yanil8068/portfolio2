@@ -238,9 +238,10 @@ nav ul li a {
 /* about */
 #about {
   width: 100%;
-
-  /* background: #22092C; */
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
+  padding-bottom: 80px;
+  box-sizing: border-box;
   position: relative;
 }
 #about .text {
@@ -254,7 +255,7 @@ nav ul li a {
 }
 .about_main {
   width: 80%;
-  height: 65vh;
+  height: auto;
   margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
@@ -307,13 +308,13 @@ nav ul li a {
   flex-direction: column;
 
   /* border: 3px solid white; */
-  padding: 35px;
+  padding: 20px 35px;
 }
 .educationandcompleted {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  margin: 40px 0px;
+  margin: 20px 0px;
 }
 .education {
   margin: 0 20px;
@@ -443,9 +444,10 @@ nav ul li a {
 #myprojects {
   width: 100%;
   position: relative;
-  /* background: #22092C; */
-  /* height: 157vh; */
-  height: 300vh;
+  min-height: 100vh;
+  height: auto;
+  padding: 60px 0 100px 0;
+  box-sizing: border-box;
 }
 #myprojects h1 {
   text-align: center;
@@ -455,8 +457,7 @@ nav ul li a {
 .project_main {
   margin: 50px auto;
   width: 80%;
-  height: 600px;
-  /* background: white; */
+  height: auto;
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
@@ -567,8 +568,9 @@ nav ul li a {
 .six #git {
   margin: 10px 10px;
   width: 40%;
-  background: blue;
-  color: white;
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
   cursor: pointer;
   padding: 5px 0;
   border-radius: 10px;
@@ -580,8 +582,8 @@ nav ul li a {
 .four #git:hover,
 .five #git:hover,
 .six #git:hover {
-  background: black;
-  color: white;
+  background: white !important;
+  color: black !important;
 }
 .one #see,
 .two #see,
@@ -589,12 +591,14 @@ nav ul li a {
 .four #see,
 .five #see,
 .six #see {
-  margin: 0 10px;
-  width: 40%;
-  background: crimson;
-  color: white;
+  margin: 10px auto;
+  width: 60%;
+  max-width: 200px;
+  background: #ff3366 !important;
+  color: white !important;
+  border: 1px solid #ff3366 !important;
   cursor: pointer;
-  padding: 5px 0;
+  padding: 8px 0;
   border-radius: 10px;
   transition: 0.4s;
 }
@@ -604,26 +608,17 @@ nav ul li a {
 .four #see:hover,
 .five #see:hover,
 .six #see:hover {
-  background: blueviolet;
-  color: white;
+  background: #ff0044 !important;
+  border-color: #ff0044 !important;
+  color: white !important;
 }
-.one {
-  background: pink;
-}
-.two {
-  background: yellow;
-}
-.three {
-  background: lightblue;
-}
-.four {
-  background: rgb(239, 76, 76);
-}
-.five {
-  background: #fff;
-}
-.six {
-  background: rgb(255, 115, 243);
+.one, .two, .three, .four, .five, .six {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: white !important;
 }
 #myprojectsdownarrow {
   position: absolute;
@@ -644,13 +639,13 @@ nav ul li a {
 
 @media screen and (max-width: 770px) {
   #myprojects {
-    height: 430vh;
+    height: auto;
+    padding: 40px 0 60px 0;
   }
   .project_main {
     margin: 10px auto;
-    height: 1000px;
-    /* background: white; */
-    gap: 10px;
+    height: auto;
+    gap: 20px;
   }
   .project_main .one,
   .project_main .two,
@@ -659,8 +654,8 @@ nav ul li a {
   .project_main .five,
   .project_main .six {
     flex-basis: 90%;
-    /* background: green; */
-    height: 280px;
+    height: auto;
+    padding: 30px 20px;
   }
   #myprojectsdownarrow {
     display: none;
@@ -672,7 +667,9 @@ nav ul li a {
   .project_main .fourBlank,
   .project_main .fiveBlank {
     font-size: 14.4px;
-    height: 280px;
+    height: auto;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 20px;
   }
 
   .project_main .one:hover,
@@ -681,7 +678,6 @@ nav ul li a {
   .project_main .four:hover,
   .project_main .five:hover,
   .project_main .six:hover {
-    /* box-shadow: 0px 0px 20px rgb(108, 12, 177);  */
     scale: 1;
   }
 
@@ -731,9 +727,11 @@ nav ul li a {
 
 #certificates {
   width: 100%;
-  /* background: #22092C; */
-  height: 120vh;
+  min-height: 100vh;
+  height: auto;
   position: relative;
+  padding: 60px 0 100px 0;
+  box-sizing: border-box;
 }
 #certificates h1 {
   text-align: center;
@@ -743,13 +741,11 @@ nav ul li a {
 .certificates_main {
   margin: 50px auto;
   width: 80%;
-  height: 500px;
-  /* background: white; */
+  height: auto;
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
   justify-content: center;
-  /* flex-basis: 80%; */
 }
 #certificates .text {
   padding: 20px;
@@ -759,18 +755,17 @@ nav ul li a {
 .certificates_main .two,
 .certificates_main .three,
 .certificates_main .four {
-  /* edited to 15 from 25 */
-  flex-basis: 13%;
-  /* edited to 20 from 25 */
-  /* background: green; */
-  height: 270px;
-
-  border-radius: 5px;
-
-  /* border-radius: 10px 100px / 120px; */
-  text-align: center;
-  padding: 15px 30px;
+  flex-basis: 22%;
+  min-width: 250px;
+  height: auto;
+  border-radius: 12px;
+  text-align: left;
+  padding: 25px;
   transition: 0.3s;
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  color: white !important;
 }
 
 .certificates_main .one:hover,
@@ -846,18 +841,7 @@ nav ul li a {
   color: white;
 }
 
-.certificates_main .one {
-  background: #fff;
-}
-.certificates_main .two {
-  background: #fff;
-}
-.certificates_main .three {
-  background: #fff;
-}
-.certificates_main .four {
-  background: #fff;
-}
+/* Cards backgrounds are defined dynamically above */
 #certificatesdownarrow {
   position: absolute;
   right: 50px;
@@ -870,17 +854,20 @@ nav ul li a {
 }
 @media screen and (max-width: 770px) {
   #certificates {
-    height: 320vh;
+    height: auto;
+    padding: 40px 0 60px 0;
   }
   .certificates_main {
     margin: 10px auto;
-    gap: 10px;
+    gap: 20px;
+    width: 95%;
   }
   .certificates_main .one,
   .certificates_main .two,
   .certificates_main .three,
   .certificates_main .four {
-    flex-basis: 50%;
+    flex-basis: 90%;
+    min-width: unset;
   }
   #certificatesdownarrow {
     display: none;
@@ -890,8 +877,10 @@ nav ul li a {
 /* contact */
 #contact {
   width: 100%;
-  /* background: #22092C; */
-  height: 105vh;
+  min-height: 100vh;
+  height: auto;
+  padding: 60px 0 100px 0;
+  box-sizing: border-box;
   position: relative;
 }
 #contact .text {
@@ -948,9 +937,9 @@ nav ul li a {
   font-family: "circular";
 }
 .email,
+.phone,
 .linkedin,
-.github,
-.instagram {
+.github {
   flex-basis: 30%;
   height: 30%;
   /* background: rgb(6, 6, 211); */
@@ -970,6 +959,10 @@ nav ul li a {
   border-color: red;
   color: red;
 }
+.phone {
+  border-color: #00b4d8;
+  color: #00b4d8;
+}
 .linkedin {
   border-color: #0a66c2;
   color: #0a66c2;
@@ -978,13 +971,13 @@ nav ul li a {
   border-color: green;
   color: green;
 }
-.instagram {
-  border-color: #fe4299;
-  color: #fe4299;
-}
 
 .email:hover {
   background-color: red;
+  color: white;
+}
+.phone:hover {
+  background-color: #00b4d8;
   color: white;
 }
 .linkedin:hover {
@@ -995,22 +988,14 @@ nav ul li a {
   background-color: green;
   color: white;
 }
-.instagram:hover {
-  background-color: #fe4299;
-  color: white;
-}
 
-.email {
+.email, .phone, .linkedin, .github {
   margin-bottom: 10px;
-}
-.linkedin {
-  margin: 10px 0;
-}
-.instagram {
-  margin-top: 10px;
 }
 
 input[type="text"],
+input[type="email"],
+input[type="tel"],
 input[type="number"],
 textarea {
   padding: 10px 20px;
@@ -1041,7 +1026,8 @@ input[type="submit"] {
 
 @media screen and (max-width: 770px) {
   #contact {
-    height: 170vh;
+    height: auto;
+    padding-bottom: 40px;
   }
   .contact_main {
     gap: 0px;
@@ -1062,15 +1048,19 @@ input[type="submit"] {
   }
 
   .email,
+  .phone,
   .linkedin,
-  .github,
-  .instagram {
+  .github {
     padding: 10px;
   }
 
   .email:hover {
     background-color: transparent;
     color: red;
+  }
+  .phone:hover {
+    background-color: transparent;
+    color: #00b4d8;
   }
   .linkedin:hover {
     background-color: transparent;
@@ -1079,10 +1069,6 @@ input[type="submit"] {
   .github:hover {
     background-color: transparent;
     color: green;
-  }
-  .instagram:hover {
-    background-color: transparent;
-    color: #fe4299;
   }
 
   form {
@@ -1113,3 +1099,295 @@ input[type="submit"] {
 }
 
 /* tech skills section */
+
+/* Experience Section Timeline */
+#experience {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  position: relative;
+  padding: 60px 0 100px 0;
+  box-sizing: border-box;
+}
+
+#experience h1 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  font-family: "circular", sans-serif;
+}
+
+.experience_main {
+  width: 80%;
+  margin: 50px auto;
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.timeline_item {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.timeline_dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: -8px;
+  background-color: #ff3366;
+  border: 4px solid rgb(5, 5, 39);
+  top: 25px;
+  border-radius: 50%;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.timeline_item:nth-child(even) .timeline_dot {
+  left: -8px;
+}
+
+.timeline_item:nth-child(odd) {
+  left: 0;
+}
+
+.timeline_item:nth-child(even) {
+  left: 50%;
+}
+
+.timeline_content {
+  padding: 25px 30px;
+  background: rgba(255, 255, 255, 0.03);
+  position: relative;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: white;
+  transition: all 0.4s ease;
+}
+
+.timeline_content:hover {
+  transform: translateY(-5px);
+  border-color: #ff3366;
+  box-shadow: 0 12px 40px 0 rgba(255, 51, 102, 0.2);
+}
+
+.timeline_item:hover .timeline_dot {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px #ff3366;
+}
+
+.timeline_date {
+  font-size: 16px;
+  color: #ff3366;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.timeline_content h3 {
+  font-size: 22px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.timeline_content h4 {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.timeline_content ul {
+  padding-left: 20px;
+}
+
+.timeline_content ul li {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 8px;
+  list-style-type: square;
+  text-align: left;
+}
+
+#experiencedownarrow {
+  position: absolute;
+  right: 50px;
+  bottom: 30px;
+  transform: translatey(0px);
+  animation: float 2.5s ease-in-out infinite;
+}
+
+#experiencedownarrow a {
+  color: white;
+}
+
+/* Certifications Section */
+#certifications_section {
+  width: 100%;
+  min-height: 80vh;
+  height: auto;
+  position: relative;
+  padding: 60px 0 100px 0;
+  box-sizing: border-box;
+}
+
+#certifications_section h1 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  font-family: "circular", sans-serif;
+}
+
+.certifications_container {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.cert_link {
+  flex-basis: 45%;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+}
+
+.cert_card {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 40px 30px;
+  text-align: center;
+  color: white;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.cert_card:hover {
+  transform: translateY(-8px);
+  border-color: #00b4d8;
+  box-shadow: 0 15px 40px rgba(0, 180, 216, 0.25);
+}
+
+.cert_icon {
+  font-size: 40px;
+  color: #00b4d8;
+  margin-bottom: 20px;
+}
+
+.cert_card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.cert_card h4 {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
+}
+
+.cert_date {
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 15px;
+}
+
+.cert_badge {
+  background: rgba(0, 180, 216, 0.15);
+  border: 1px solid #00b4d8;
+  color: #00b4d8;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#certificationsdownarrow {
+  position: absolute;
+  right: 50px;
+  bottom: 30px;
+  transform: translatey(0px);
+  animation: float 2.5s ease-in-out infinite;
+}
+
+#certificationsdownarrow a {
+  color: white;
+}
+
+/* Mobile responsive styles for experience and certifications */
+@media screen and (max-width: 770px) {
+  .timeline::after {
+    left: 31px;
+  }
+  
+  .timeline_item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  .timeline_item:nth-child(even) {
+    left: 0%;
+  }
+  
+  .timeline_dot {
+    left: 23px !important;
+    right: auto;
+  }
+  
+  #experience, #certifications_section {
+    padding-bottom: 50px;
+  }
+  
+  .experience_main, .certifications_container {
+    width: 95%;
+  }
+  
+  .cert_link {
+    flex-basis: 95%;
+    display: flex;
+  }
+  
+  .cert_card {
+    width: 100%;
+    padding: 30px 20px;
+  }
+  
+  #experiencedownarrow, #certificationsdownarrow {
+    display: none;
+  }
+}

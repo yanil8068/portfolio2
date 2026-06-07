@@ -20,13 +20,11 @@
       <div class="navbar">
         <ul>
           <li><a href="#home">HOME</a></li>
-
           <li><a href="#about">ABOUT</a></li>
-
-          <li><a href="#myprojects">MYPROJECTS</a></li>
-
+          <li><a href="#experience">EXPERIENCE</a></li>
+          <li><a href="#myprojects">PROJECTS</a></li>
           <li><a href="#certificates">TECH SKILLS</a></li>
-
+          <li><a href="#certifications_section">CERTIFICATIONS</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
@@ -61,8 +59,10 @@
       <ul>
         <li><a href="#home">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
-        <li><a href="#myprojects">MY PROJECTS</a></li>
+        <li><a href="#experience">EXPERIENCE</a></li>
+        <li><a href="#myprojects">PROJECTS</a></li>
         <li><a href="#certificates">TECH SKILLS</a></li>
+        <li><a href="#certifications_section">CERTIFICATIONS</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
@@ -88,17 +88,17 @@
             </div> -->
           <div class="features_text">
             <p>
-              Hello! I'm a Software Developer specializing in the MERN stack. With a solid foundation in MongoDB, Express.js, React, and Node.js, I enjoy creating robust, end-to-end web applications. Currently, I'm working as a Software Developer at Skitch Technologies Private Limited, where I focus on building scalable and efficient chatbot solutions.
+              Hello! I'm a Software Developer with 2 years of experience specializing in the MERN stack, enterprise backend systems, and AI-powered business automation. I love designing scalable full-stack applications, robust API architectures, and real-time communication systems.
             </p><br>
             <p>
-              Whether it's backend architecture or frontend design or gen ai, I’m committed to crafting seamless user experiences through code.
+              Currently, I focus on building AI-powered chatbot solutions, WhatsApp marketing platforms, and document-based Q&A systems using LangChain, RAG architectures, and vector databases to streamline workflows and reduce customer support overhead.
             </p>
           </div>
           <div class="educationandcompleted">
             <div class="education">
               <i class="fa-solid fa-school"></i><br>
               <h3>Education</h3><br>
-              <p>Bachelor of Science(BSc)</p>
+              <p>Bachelor of Science (Physics)</p>
             </div>
             <div class="completed"  onclick="window.location.href = '#myprojects'">
               <i class="fa-solid fa-briefcase"></i><br>
@@ -117,7 +117,78 @@
 
       </div>
     </div>
-    <span id="aboutdownarrow"><a href="#myprojects"><i class="fa-solid fa-angles-down"></i></a></span>
+    <span id="aboutdownarrow"><a href="#experience"><i class="fa-solid fa-angles-down"></i></a></span>
+  </section>
+  <hr />
+  <section id="experience" data-aos="fade-up">
+    <div class="text">
+      <h1>EXPERIENCE</h1>
+    </div>
+    <hr />
+    <div class="experience_main">
+      <div class="timeline">
+        <div class="timeline_item" data-aos="fade-right">
+          <div class="timeline_dot"></div>
+          <div class="timeline_date">Jan 2026 – Present</div>
+          <div class="timeline_content">
+            <h3>Software Developer</h3>
+            <h4>Skitch Technologies Pvt Ltd</h4>
+            <ul>
+              <li>Development of SaaS and AI-powered business applications.</li>
+              <li>Designing scalable system architectures and backend services.</li>
+              <li>Mentoring developers and conducting code reviews.</li>
+              <li>Implementing RBAC, authentication, and security best practices.</li>
+              <li>Collaborating with stakeholders and participating in technical planning.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline_item" data-aos="fade-left">
+          <div class="timeline_dot"></div>
+          <div class="timeline_date">Jan 2025 – Dec 2025</div>
+          <div class="timeline_content">
+            <h3>Full Stack Developer</h3>
+            <h4>Skitch Technologies Pvt Ltd</h4>
+            <ul>
+              <li>Developed AI-powered chatbot solutions serving 3 communication channels (WhatsApp, Web, Email), reducing manual customer support effort.</li>
+              <li>Built document-based question-answering systems for customer support and knowledge retrieval.</li>
+              <li>Implemented campaign scheduling and automated customer engagement workflows managing 70,000+ leads and supporting bulk campaign delivery to more than 10,000 customers simultaneously.</li>
+              <li>Developed intent-based automation and customer nudge solutions.</li>
+              <li>Designed UTM-based tracking and analytics features.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline_item" data-aos="fade-right">
+          <div class="timeline_dot"></div>
+          <div class="timeline_date">Jun 2024 – Dec 2024</div>
+          <div class="timeline_content">
+            <h3>Backend Developer</h3>
+            <h4>Weframe Tech</h4>
+            <ul>
+              <li>Developed backend services and APIs for business applications.</li>
+              <li>Built a centralized platform to manage chats from multiple WhatsApp Business numbers.</li>
+              <li>Implemented webhook and real-time communication solutions.</li>
+              <li>Designed and maintained database structures and integrations.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline_item" data-aos="fade-left">
+          <div class="timeline_dot"></div>
+          <div class="timeline_date">2020 – Jun 2024</div>
+          <div class="timeline_content">
+            <h3>Mathematics & Science Teacher</h3>
+            <h4>Excellent Tutorials</h4>
+            <ul>
+              <li>Taught Mathematics and Science to students from Classes 5–10.</li>
+              <li>Guided students in concept building and exam preparation.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span id="experiencedownarrow"><a href="#myprojects"><i class="fa-solid fa-angles-down"></i></a></span>
   </section>
   <hr />
   <section id="myprojects" data-aos="fade-up">
@@ -127,103 +198,46 @@
     <hr />
     <div class="project_main">
 
+      <!-- Project 1: WhatsApp Marketing Platform -->
       <div class="three">
-        <h2>Aliexpress</h2>
-        <img src="images/aliexp.png" alt="" /> <br>
-
-        <a href="https://aliexpressfullstack.netlify.app/" target="_blank"><button id="see">SEE LIVE</button></a>
-
-        <a href="https://github.com/yanil8068/aliExpress_Frontend_With_Backend_Connected" target="_blank"><button id="git">SOURCE CODE</button></a>
-
+        <h2>WhatsApp Marketing Platform</h2>
+        <img src="images/whatsapp_marketing.png" alt="WhatsApp Marketing Platform" /> <br>
+        <a href="#contact"><button id="see">REQUEST DEMO</button></a>
       </div>
-      <!-- blank space -->
       <div class="threeBlank" style="color: white;">
-        <h2>Aliexpress</h2><br>
-        <p>Description: Developed a full-stack e-commerce platform inspired by aliexpress featuring secure authentication, search
-          functionality, admin dashboard, and responsive ui using tailwind css for an enhanced user experience.</p> <br>
-
-        <p>Tech Used: React.js ,Redux Toolkit, Express.js, MongoDB, JWT </p>
+        <h2>WhatsApp Marketing Platform</h2><br>
+        <p>Description: Scalable marketing automation platform supporting campaign scheduling, AI-powered lead qualification, automated follow-ups, CRM integration, and customer engagement analytics. Scaled the platform to manage 70,000+ leads while enabling businesses to send campaign messages to 10,000+ customers in a single campaign execution.</p> <br>
+        <p>Tech Used: Node.js, Express.js, PostgreSQL, OpenAI API, WhatsApp Business API, Redis, Webhooks</p>
       </div>
 
-         <!-- blank space -->
-         <div class="fourBlank" style="color: white;">
-          <h2>Ajio</h2><br>
-          <p>Description: Worked as part of a team of 3 members to develop a responsive e-commerce platform inspired by ajio
-            implementing secure authentication and featuring intuitive cart management and product browsing. </p><br>
-  
-          <p>Tech Used: React.js , Redux Toolkit , Tailwind CSS , Firebase</p>
-        </div>
-        <div class="four">
-          <h2>Ajio</h2>
-          <img src="images/ajio.png" alt="landing page" /><br>
-  
-          <a href="https://ajio-project.netlify.app/" target="_blank"><button id="see">SEE LIVE</button></a>
-          <a href="https://github.com/yanil8068/ajio" target="_blank"><button id="git">SOURCE CODE</button></a>
-        </div>
-  
-        <!-- blank space -->
-        <div class="fourBlankSmallScreen" style="color: white;">
-          <h2>Ajio</h2><br>
-          <p>Description: Worked as part of a team of 3 members to develop a responsive e-commerce platform inspired by ajio
-            implementing secure authentication and featuring intuitive cart management and product browsing. </p><br>
-  
-          <p>Tech Used: React.js , Redux Toolkit , Tailwind CSS , Firebase</p>
-        </div>
+      <!-- Project 2: Multi-Channel AI Chatbot -->
+      <div class="fourBlank" style="color: white;">
+        <h2>Multi-Channel AI Chatbot</h2><br>
+        <p>Description: Unified communication hub connecting WhatsApp, Web Chat, and Email. Employs document-based Q&A retrieval and intent-based customer routing systems, significantly reducing support response times and support agent workload.</p><br>
+        <p>Tech Used: React.js, Next.js, LangChain, OpenAI API, Pinecone, WebSockets, Node.js</p>
+      </div>
+      <div class="four">
+        <h2>Multi-Channel AI Chatbot</h2>
+        <img src="images/ai_chatbot.png" alt="Multi-Channel AI Chatbot" /><br>
+        <a href="#contact"><button id="see">REQUEST DEMO</button></a>
+      </div>
+      <div class="fourBlankSmallScreen" style="color: white;">
+        <h2>Multi-Channel AI Chatbot</h2><br>
+        <p>Description: Unified communication hub connecting WhatsApp, Web Chat, and Email. Employs document-based Q&A retrieval and intent-based customer routing systems, significantly reducing support response times and support agent workload.</p><br>
+        <p>Tech Used: React.js, Next.js, LangChain, OpenAI API, Pinecone, WebSockets, Node.js</p>
+      </div>
 
+      <!-- Project 3: Multi-Tenant WhatsApp Gateway -->
       <div class="one">
-        <h2>Airbnb</h2>
-        <img src="images/Airbnb.png" alt="Airbnb" /><br>
-
-
-        <a href="https://major-project-3liz.onrender.com/listings" target="_blank"><button id="see">SEE
-            LIVE</button></a>
-
-        <a href="https://github.com/yanil8068/mongo_node_express_project" target="_blank"><button id="git">SOURCE
-            CODE</button></a>
+        <h2>Multi-Tenant WhatsApp Gateway</h2>
+        <img src="images/whatsapp_integration.png" alt="Multi-Tenant WhatsApp Gateway" /><br>
+        <a href="#contact"><button id="see">REQUEST DEMO</button></a>
       </div>
-      <!-- blank space -->
       <div class="oneBlank" style="color: white;">
-        <h2>Airbnb</h2><br>
-        <p>Description: A feature-rich Airbnb clone application leveraging MongoDB, Express.js, and Node.js, with added
-          functionalities such as authentication, image upload, and map integration. Deployed on Render, it offers a
-          robust platform for creating, updating, deleting and showcasing home listings with advanced features like
-          authorization, error handling, and geocoding. </p><br>
-        <p>Tech Used: MongoDB, Express, Node.js, Mongoose, Bootstrap, EJS Template,
-          Mapbox, Passport.js, multer, Cloudinary, cookie-parser, connect-flash, ejs-mate . </p>
-
+        <h2>Multi-Tenant WhatsApp Gateway</h2><br>
+        <p>Description: Robust multi-tenant dashboard allowing superadmins to manage conversations across multiple WhatsApp Business numbers. Features real-time chat synchronization, webhooks, and scalable database schemas.</p><br>
+        <p>Tech Used: Node.js, Express.js, MongoDB, React.js, WebSockets, Redis, System Design</p>
       </div>
-
-
-      <!-- blank space -->
-      <div class="twoBlank" style="color: white;">
-        <h2>Quiz Platform</h2><br>
-        <p>Description:A dynamic React-based quiz platform offering users the ability to create and manage quizzes
-          seamlessly. Integrated with Google Firebase for authentication, it employs Redux for state management and
-          Material UI for sleek design. Deployed on Netlify, it ensures accessibility and reliability for an engaging
-          quiz-taking experience. </p><br>
-        <p>Tech Used: React, Redux, Material UI, Google Firebase</p>
-      </div>
-      <div class="two">
-        <h2>Quiz Platform</h2>
-        <img src="images/QuizPlatform.png" alt="Quiz-Platform" /><br>
-
-        <a href="https://quizzyplatform.netlify.app/" target="_blank"><button id="see">SEE LIVE</button></a>
-        <a href="https://github.com/yanil8068/Quiz-Platform" target="_blank"><button id="git">SOURCE CODE</button></a>
-      </div>
-      <!-- blank space -->
-      <div class="twoBlankSmallScreen" style="color: white;">
-        <h2>React js Project</h2><br>
-        <p>Description:A dynamic React-based quiz platform offering users the ability to create and manage quizzes
-          seamlessly. Integrated with Google Firebase for authentication, it employs Redux for state management and
-          Material UI for sleek design. Deployed on Netlify, it ensures accessibility and reliability for an engaging
-          quiz-taking experience. </p><br>
-        <p>Tech Used: React, Redux, Material UI, Google Firebase</p>
-      </div>
-
-
-
-
-   
 
     </div>
     <span id="myprojectsdownarrow"><a href="#certificates"><i class="fa-solid fa-angles-down"></i></a></span>
@@ -237,122 +251,122 @@
     </div>
     <hr />
     <div class="certificates_main">
+      <!-- Languages & Frontend -->
       <div class="four">
         <div class="certificates_desc">
-          <h4>Scripting languages</h4><br>
+          <h4>Languages & Frontend</h4><br>
           <hr>
-          <div class="specifit_info_techskills"><i class="fa-brands fa-react" style="color: blue;"></i>
-            <h5>React JS</h5>
-          </div>
-          <div class="specifit_info_techskills"><i class="fa-solid fa-database" style="color: indigo;"></i>
-            <h5>Redux</h5>
-          </div>
-          <div class="specifit_info_techskills"><i class="fa-brands fa-html5" style="color: orangered;"></i>
-            <h5>HTML5</h5>
-          </div>
-          <div class="specifit_info_techskills"><i class="fa-brands fa-css3-alt" style="color: blue;"></i>
-            <h5>CSS3</h5>
-          </div>
-          <div class="specifit_info_techskills"><i class="fa-brands fa-js" style="color: yellow;"></i>
-            <h5>Javascript</h5>
-          </div>
+          <div class="specifit_info_techskills"><i class="fa-brands fa-js" style="color: #f7df1e;"></i><h5>JavaScript</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-solid fa-code" style="color: #3178c6;"></i><h5>TypeScript</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-brands fa-python" style="color: #3776ab;"></i><h5>Python</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-brands fa-react" style="color: #61dafb;"></i><h5>React.js</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-solid fa-circle-nodes" style="color: #ffffff;"></i><h5>Next.js</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-brands fa-html5" style="color: #e34f26;"></i><h5>HTML5/CSS3</h5></div>
         </div>
       </div>
-      <div class="four">
-        <div class="certificates_desc">
-          <h4>BackEnd</h4><br>
-          <hr>
-          <div class="specifit_info_techskills"><i class="fa-brands fa-node" style="color: rgb(0, 255, 106);"></i>
-            <h5>Node JS</h5>
-          </div>
-          <div class="specifit_info_techskills"><i class="fa-solid fa-train-subway" style="color: black;"></i>
-            <h5>Express</h5>
-          </div>
-          <div class="specifit_info_techskills"><i class="fa-solid fa-database" style="color: brown;"></i>
-            <h5>Ejs</h5>
-          </div> 
-          <div class="specifit_info_techskills"><i class="fa-solid fa-wand-magic-sparkles" style="color: pink;"></i>
-            <h5>Directus cms</h5>
-          </div>
 
+      <!-- Backend & APIs -->
+      <div class="four">
+        <div class="certificates_desc">
+          <h4>Backend & APIs</h4><br>
+          <hr>
+          <div class="specifit_info_techskills"><i class="fa-brands fa-node-js" style="color: #339933;"></i><h5>Node.js</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-solid fa-server" style="color: #ffffff;"></i><h5>Express.js</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-solid fa-cloud-arrow-down" style="color: #007acc;"></i><h5>REST APIs</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-solid fa-comments" style="color: #ff6600;"></i><h5>WebSockets</h5></div>
         </div>
       </div>
+
+      <!-- Databases -->
       <div class="three">
-
-
         <div class="certificates_desc">
-          <h4>Frameworks</h4><br>
+          <h4>Databases</h4><br>
           <hr>
-          <div class="specifit_info_techskills"><i class="fa-solid fa-splotch" style="color: blue;"></i>
-            <h5>Material UI</h5>
-          </div>
-          <div class="specifit_info_techskills"><i class="fa-brands fa-bootstrap" style="color: indigo;"></i>
-            <h5>Bootstrap</h5>
-          </div>
-          <div class="specifit_info_techskills"><i class="fa-solid fa-palette" style="color: rgb(62, 133, 181);"></i>
-            <h5>Tailwind CSS</h5>
-          </div>
+          <div class="specifit_info_techskills"><i class="fa-solid fa-database" style="color: #336791;"></i><h5>PostgreSQL</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-brands fa-envira" style="color: #47a248;"></i><h5>MongoDB</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-solid fa-database" style="color: #00758f;"></i><h5>MySQL</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-solid fa-database" style="color: #d82c20;"></i><h5>Redis</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-solid fa-fire" style="color: #ffca28;"></i><h5>Firestore</h5></div>
         </div>
       </div>
 
+      <!-- AI & Automation -->
       <div class="two">
         <div class="certificates_desc">
-          <h4>Database</h4><br>
+          <h4>AI & Automation</h4><br>
           <hr>
-          <div class="specifit_info_techskills"><i class="fa-brands fa-envira" style="color: green;"></i></i>
-            <h5>MongoDB</h5>
-          </div>
-          <div class="specifit_info_techskills"><i class="fa-solid fa-fish-fins" style="color: blue;"></i>
-            <h5>MySQL</h5>
-          </div> 
-             <div class="specifit_info_techskills"><i class="fa-solid fa-fish-fins" style="color: blue;"></i>
-            <h5>Pinecone</h5>
-          </div>
+          <div class="specifit_info_techskills"><i class="fa-solid fa-robot" style="color: #10a37f;"></i><h5>OpenAI API</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-solid fa-link" style="color: #ffffff;"></i><h5>LangChain</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-solid fa-tree" style="color: #06b6d4;"></i><h5>Pinecone</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-solid fa-brain" style="color: #8b5cf6;"></i><h5>RAG Systems</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-solid fa-message" style="color: #3b82f6;"></i><h5>AI Chatbots</h5></div>
         </div>
       </div>
+
+      <!-- Cloud & DevOps -->
       <div class="four">
         <div class="certificates_desc">
-          <h4>Hosting Platform</h4><br>
+          <h4>Cloud & DevOps</h4><br>
           <hr>
-          <div class="specifit_info_techskills"><i class="fa-solid fa-wand-magic" style="color: black;"></i>
-            <h5>Render</h5>
-          </div>
-          <div class="specifit_info_techskills"><i class="fa-solid fa-star-of-life"
-              style="color: rgb(62, 133, 181);"></i>
-            <h5>Netlify</h5>
-          </div>
-          <div class="specifit_info_techskills"><i class="fa-brands fa-github" style="color: black;"></i>
-            <h5>GitHub Pages</h5>
-          </div>
+          <div class="specifit_info_techskills"><i class="fa-brands fa-aws" style="color: #ff9900;"></i><h5>AWS</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-solid fa-cloud" style="color: #f5f5f5;"></i><h5>OCI</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-brands fa-docker" style="color: #2496ed;"></i><h5>Docker</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-brands fa-git-alt" style="color: #f05032;"></i><h5>Git/GitHub</h5></div>
         </div>
       </div> 
-         <div class="four">
+
+      <!-- Architecture & Security -->
+      <div class="four">
         <div class="certificates_desc">
-          <h4>Generative Ai</h4><br>
+          <h4>Architecture & Security</h4><br>
           <hr>
-          <div class="specifit_info_techskills"><i class="fa-solid fa-wand-magic" style="color: black;"></i>
-            <h5>Langchain</h5>
-          </div>
-          <div class="specifit_info_techskills"><i class="fa-solid fa-star-of-life"
-              style="color: rgb(62, 133, 181);"></i>
-            <h5>OpenAi</h5>
-          </div>
-          <div class="specifit_info_techskills"><i class="fa-brands fa-github" style="color: black;"></i>
-            <h5>RAG</h5>
-          </div>
+          <div class="specifit_info_techskills"><i class="fa-solid fa-cubes" style="color: #3f83f8;"></i><h5>Microservices</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-solid fa-user-shield" style="color: #e02424;"></i><h5>RBAC</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-solid fa-key" style="color: #059669;"></i><h5>Auth</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-solid fa-diagram-project" style="color: #7e3af2;"></i><h5>System Design</h5></div>
         </div>
       </div>
+
+      <!-- Platforms & Softskills -->
       <div class="one">
         <div class="certificates_desc">
-          <h4>Version Control</h4><br>
+          <h4>Tools & Soft Skills</h4><br>
           <hr>
-          <div class="specifit_info_techskills"><i class="fa-brands fa-git-alt" style="color: orangered;"></i>
-            <h5>Git</h5>
-          </div>
+          <div class="specifit_info_techskills"><i class="fa-solid fa-wand-magic-sparkles" style="color: #ec4899;"></i><h5>Directus</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-solid fa-paper-plane" style="color: #ff6c37;"></i><h5>Postman</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-solid fa-puzzle-piece" style="color: #10b981;"></i><h5>Problem-Solving</h5></div>
+          <div class="specifit_info_techskills"><i class="fa-solid fa-users" style="color: #3b82f6;"></i><h5>Collaboration</h5></div>
         </div>
       </div>
     </div>
-    <span id="certificatesdownarrow"><a href="#contact"><i class="fa-solid fa-angles-down"></i></a></span>
+    <span id="certificatesdownarrow"><a href="#certifications_section"><i class="fa-solid fa-angles-down"></i></a></span>
+  </section>
+  <hr />
+  <section id="certifications_section" data-aos="fade-up">
+    <div class="text">
+      <h1>CERTIFICATIONS</h1>
+    </div>
+    <hr />
+    <div class="certifications_container">
+      <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=1969165B8D28EFDD18769D6C379FC7CB7EB740AC1629E013B55A8D52F0EF07C1" target="_blank" class="cert_link">
+        <div class="cert_card" data-aos="zoom-in">
+          <div class="cert_icon"><i class="fa-solid fa-award"></i></div>
+          <h3>Oracle Cloud Infrastructure 2025 Certified Foundations Associate</h3>
+          <p class="cert_date">October 2025</p>
+          <span class="cert_badge">OCI Associate</span>
+        </div>
+      </a>
+      <a href="https://verified.sertifier.com/en/verify/67861348185899/" target="_blank" class="cert_link">
+        <div class="cert_card" data-aos="zoom-in">
+          <div class="cert_icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Full Stack Web Development Program</h3>
+          <h4>AlmaBetter</h4>
+          <p class="cert_date">July 2019</p>
+          <span class="cert_badge">Full Stack Developer</span>
+        </div>
+      </a>
+    </div>
+    <span id="certificationsdownarrow"><a href="#contact"><i class="fa-solid fa-angles-down"></i></a></span>
   </section>
 
   <hr>
@@ -364,9 +378,13 @@
     <hr />
     <div class="contact_main">
       <div class="leftpart">
-        <div class="email" onclick="window.location.href = 'mailto:yanil8068@gmail.com.com'"><i
+        <div class="email" onclick="window.location.href = 'mailto:yanil8068@gmail.com'"><i
             class="fa-solid fa-envelope"></i><br>
           <h3>yanil8068@gmail.com</h3><br>
+        </div>
+        <div class="phone" onclick="window.location.href = 'tel:+918552035822'"><i
+            class="fa-solid fa-phone"></i><br>
+          <h3>+91-8552035822</h3>
         </div>
         <div class="linkedin" onclick="window.location.href = 'https://www.linkedin.com/in/anilyadav8068/'"><i
             class="fa-brands fa-linkedin"></i><br>
@@ -376,10 +394,6 @@
             class="fa-brands fa-github"></i><br>
           <h3>yanil8068</h3>
         </div>
-        <div class="instagram" onclick="window.location.href = 'https://www.instagram.com/ani.l.yadav/'"><i
-            class="fa-brands fa-instagram"></i><br>
-          <h3>ani.l.yadav</h3>
-        </div>
       </div>
       <div class="rightpart">
         <form action="https://api.web3forms.com/submit" method="POST" id="form">
@@ -388,8 +402,8 @@
           <input type="checkbox" name="botcheck" id="" style="display: none;">
 
           <input type="text" name="name" placeholder="name" required><br>
-          <input type="text" name="email" placeholder="email" required><br>
-          <input type="number" name="phone" placeholder="phone number"><br>
+          <input type="email" name="email" placeholder="email" required><br>
+          <input type="tel" name="phone" placeholder="phone number" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required><br>
           <textarea name="message" placeholder="Message" required></textarea><br>
           <input type="submit" value="Send Message"><br>
           <div id="result"></div>

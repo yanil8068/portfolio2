@@ -54,3 +54,16 @@ form.addEventListener("submit", function (e) {
       }, 3000);
     });
 });
+
+// Enforce max 10 digits and numbers only for phone input
+const phoneInput = document.querySelector('input[name="phone"]');
+if (phoneInput) {
+  phoneInput.addEventListener("input", function () {
+    // Replace any non-numeric character
+    this.value = this.value.replace(/[^0-9]/g, '');
+    // Keep max 10 digits
+    if (this.value.length > 10) {
+      this.value = this.value.slice(0, 10);
+    }
+  });
+}
